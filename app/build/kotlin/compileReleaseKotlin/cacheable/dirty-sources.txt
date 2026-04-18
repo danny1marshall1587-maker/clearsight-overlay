@@ -1,6 +1,0 @@
-/home/dan/Documents/clearsight_android/app/src/main/java/com/clearsight/overlay/FloatingMenuService.kt
-/home/dan/Documents/clearsight_android/app/src/main/java/com/clearsight/overlay/SettingsActivity.kt
-/home/dan/Documents/clearsight_android/app/src/main/java/com/clearsight/overlay/ClearSightAccessibilityService.kt
-/home/dan/Documents/clearsight_android/app/src/main/java/com/clearsight/overlay/CSLog.kt
-/home/dan/Documents/clearsight_android/app/src/main/java/com/clearsight/overlay/OverlayService.kt
-/home/dan/Documents/clearsight_android/app/src/main/java/com/clearsight/overlay/PreferencesHelper.kt
