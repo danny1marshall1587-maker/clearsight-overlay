@@ -1,0 +1,178 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.clearsight.overlay"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Permissions for Overlay and Accessibility -->
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:6:5-78
+12-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:6:22-75
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:7:5-77
+13-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:7:22-74
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+14-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:8:5-89
+14-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:8:22-86
+15
+16    <permission
+16-->[androidx.core:core:1.13.1] /home/dan/.gradle/caches/8.11.1/transforms/334a3559b089344333a596d775539422/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+17        android:name="com.clearsight.overlay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.13.1] /home/dan/.gradle/caches/8.11.1/transforms/334a3559b089344333a596d775539422/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.13.1] /home/dan/.gradle/caches/8.11.1/transforms/334a3559b089344333a596d775539422/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.clearsight.overlay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.13.1] /home/dan/.gradle/caches/8.11.1/transforms/334a3559b089344333a596d775539422/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.13.1] /home/dan/.gradle/caches/8.11.1/transforms/334a3559b089344333a596d775539422/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:10:5-51:19
+23        android:allowBackup="true"
+23-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:11:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.13.1] /home/dan/.gradle/caches/8.11.1/transforms/334a3559b089344333a596d775539422/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+25        android:extractNativeLibs="false"
+26        android:icon="@android:drawable/sym_def_app_icon"
+26-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:12:9-58
+27        android:label="ClearSight"
+27-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:13:9-35
+28        android:roundIcon="@android:drawable/sym_def_app_icon"
+28-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:14:9-63
+29        android:supportsRtl="true"
+29-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:15:9-35
+30        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+30-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:16:9-65
+31        <activity
+31-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:18:9-25:20
+32            android:name="com.clearsight.overlay.SettingsActivity"
+32-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:19:13-45
+33            android:exported="true" >
+33-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:20:13-36
+34            <intent-filter>
+34-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:21:13-24:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:22:17-69
+35-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:22:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:23:17-77
+37-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:23:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <service
+41-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:27:9-31:58
+42            android:name="com.clearsight.overlay.OverlayService"
+42-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:28:13-43
+43            android:enabled="true"
+43-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:29:13-35
+44            android:exported="false"
+44-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:30:13-37
+45            android:foregroundServiceType="specialUse" />
+45-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:31:13-55
+46        <service
+46-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:33:9-37:58
+47            android:name="com.clearsight.overlay.FloatingMenuService"
+47-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:34:13-48
+48            android:enabled="true"
+48-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:35:13-35
+49            android:exported="false"
+49-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:36:13-37
+50            android:foregroundServiceType="specialUse" />
+50-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:37:13-55
+51        <service
+51-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:39:9-49:19
+52            android:name="com.clearsight.overlay.ClearSightAccessibilityService"
+52-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:40:13-59
+53            android:exported="true"
+53-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:42:13-36
+54            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+54-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:41:13-79
+55            <intent-filter>
+55-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:43:13-45:29
+56                <action android:name="android.accessibilityservice.AccessibilityService" />
+56-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:44:17-92
+56-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:44:25-89
+57            </intent-filter>
+58
+59            <meta-data
+59-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:46:13-48:72
+60                android:name="android.accessibilityservice"
+60-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:47:17-60
+61                android:resource="@xml/accessibility_service_config" />
+61-->/home/dan/Documents/clearsight_android/app/src/main/AndroidManifest.xml:48:17-69
+62        </service>
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.3.0] /home/dan/.gradle/caches/8.11.1/transforms/e8448c43894c4d603bb4df84ee0b93f2/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.3.0] /home/dan/.gradle/caches/8.11.1/transforms/e8448c43894c4d603bb4df84ee0b93f2/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+66            android:authorities="com.clearsight.overlay.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.3.0] /home/dan/.gradle/caches/8.11.1/transforms/e8448c43894c4d603bb4df84ee0b93f2/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.3.0] /home/dan/.gradle/caches/8.11.1/transforms/e8448c43894c4d603bb4df84ee0b93f2/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.3.0] /home/dan/.gradle/caches/8.11.1/transforms/e8448c43894c4d603bb4df84ee0b93f2/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.3.0] /home/dan/.gradle/caches/8.11.1/transforms/e8448c43894c4d603bb4df84ee0b93f2/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.3.0] /home/dan/.gradle/caches/8.11.1/transforms/e8448c43894c4d603bb4df84ee0b93f2/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/dan/.gradle/caches/8.11.1/transforms/f5aba9962c6c2f244effe6ae2ebebc20/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/dan/.gradle/caches/8.11.1/transforms/f5aba9962c6c2f244effe6ae2ebebc20/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/dan/.gradle/caches/8.11.1/transforms/f5aba9962c6c2f244effe6ae2ebebc20/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+76                android:value="androidx.startup" />
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+77        </provider>
+78
+79        <receiver
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+80            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+81            android:directBootAware="false"
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+82            android:enabled="true"
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+83            android:exported="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+84            android:permission="android.permission.DUMP" >
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+86                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+89                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+92                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+95                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/dan/.gradle/caches/8.11.1/transforms/e7e3b66e69446d28dfd1e40adcea0275/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+96            </intent-filter>
+97        </receiver>
+98    </application>
+99
+100</manifest>
